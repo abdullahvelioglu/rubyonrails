@@ -1,0 +1,10 @@
+<h1> Listeler</h1>
+<% @kitaps.each do |kitap| %>	
+<%= link_to kitap.name,kitap_path(kitap)%>
+<%= kitap.since%>
+<%= link_to "sil", kitap_path(kitap), method: :delete %>
+<%= link_to "duzenle", edit_kitap_path(kitap)%>
+<hr>
+
+
+<% end %>

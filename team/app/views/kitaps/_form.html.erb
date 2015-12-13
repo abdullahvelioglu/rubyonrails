@@ -1,0 +1,11 @@
+	<%= form_for @kitap do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+    <p><%= f.label :since %><br>
+    <%= f.number_field :since %>
+    </p>
+  <p>
+    <%= f.submit %> </p>
+<% end %>

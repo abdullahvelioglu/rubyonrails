@@ -1,0 +1,20 @@
+<div class="vokal">
+<p>
+  <strong>Name:</strong>
+  <%= @kitap.name %>
+</p>
+ 
+<p>
+  <strong>Since:</strong>
+  <%= @kitap.since %>
+</p>
+
+<p>
+  <strong>Kisiyi </strong>
+  <%= link_to "sil", @kitap, method: :delete %>
+</p>
+
+<%= link_to "new", new_kitap_path%>
+<%= link_to "home", root_path%>
+<%= link_to "edit", edit_kitap_path%>
+</div>
